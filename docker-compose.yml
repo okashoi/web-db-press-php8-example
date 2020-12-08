@@ -5,13 +5,13 @@ services:
   php74:
     image: php:7.4
     volumes:
-      - ./src:/usr/src/myapp
+      - ./examples:/usr/src/myapp
     working_dir: /usr/src/myapp
-    command: php -a
+    command: bash
 
   php80:
-    image: php:8.0-rc
+    image: php:8.0
     volumes:
-      - ./src:/usr/src/myapp
+      - ./examples:/usr/src/myapp
     working_dir: /usr/src/myapp
-    command: php -a
+    command: bash
